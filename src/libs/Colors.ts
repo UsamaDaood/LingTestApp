@@ -1,0 +1,40 @@
+const Colors = {
+    black: "black",
+    whiteColor: '#ffffff',
+    darkGray: '#838589',
+    primaryColor: '#0ECAA8',
+    primaryDisable: '#F1A5A5',
+    backgroundGray: '#FAFAFA',
+    colorGray: '#EEE',
+    redColor: '#E52525',
+    tabActiveColor: '#470000',
+    tabUnActiveColor: '#0C1A30',
+    readyTextColor: '#005BE3',
+    shadowColor: '#E5E5E5',
+    backGroundLowWhiteColor: '#F6F8FC',
+    dimTextColor: '#01020666',
+    verifiedColor: '#4DE35D66',
+    subTextClr: '#8C8C8C',
+    jobTitleColor: '#0C66C2',
+    inputBg: '#F6F6F6',
+    borderColor: '#B0B0B0',
+    lineBg: '#414141',
+    lightBg: 'rgba(14, 202, 168, 0.07)',
+    activeDotColor:'#04876F',
+    gray1Color: '#676767',
+    lineColor: '#C8C8C8',
+    optionsTextColor:'#3E3E3E',
+    darkRed:'#CC2D2D',
+    inputTextbg:'#F2F2F2',
+    enableDarkColor: 'rgba(254, 92, 66, 0.15)',
+    tabTextColor: '#A8A8A8',
+    reviewItemBg: "#F6F6F6",
+    progressDisColor:"#DADADA",
+    progressDIsableColor: "#404040",
+    filterBg: "#DBDBDB",
+    premiumColor: '#D2AF26'
+    
+
+}
+
+export default Colors;
