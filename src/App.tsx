@@ -21,8 +21,8 @@ const MyTheme = {
   },
 };
 function App() {
-  // LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
-  // LogBox.ignoreAllLogs(); //Ignore all log notifications
+  LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+  LogBox.ignoreAllLogs(); //Ignore all log notifications
 
   return (
     <SafeAreaProvider style={{backgroundColor: Colors.whiteColor}}>

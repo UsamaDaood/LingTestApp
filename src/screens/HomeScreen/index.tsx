@@ -53,9 +53,16 @@ const HomeScreen: React.FC<HomeProps> = ({navigation}) => {
               </View>
               {/* Render Rank */}
               <View style={styles.itemCellStyle}>
-                <Text>
+                <Text
+                  style={{
+                    color:
+                      searchKey.trim().length > 0 &&
+                      item?.name.includes(searchKey)
+                        ? Colors.primaryColor
+                        : Colors.black,
+                  }}>
                   {searchKey.trim().length > 0 && item?.name.includes(searchKey)
-                    ? searchedRank
+                    ? searchedRank && searchedRank
                     : index + 1}
                 </Text>
               </View>
@@ -105,7 +112,7 @@ const HomeScreen: React.FC<HomeProps> = ({navigation}) => {
           // If user found.
           const searchedIndex = sortedArr.indexOf(filteredData[0]);
           console.log('index obj ' + searchedIndex);
-          setSearchedRank(searchedIndex);
+          setSearchedRank(searchedIndex + 1);
           if (searchedIndex > 9) {
             var newArr = [...sortedArr];
             newArr[9] = filteredData[0];
@@ -118,7 +125,7 @@ const HomeScreen: React.FC<HomeProps> = ({navigation}) => {
 
   return (
     <View style={styles.centered}>
-      <Text style={styles.title}>Home Screen</Text>
+      <Text style={styles.title}>Ling Test</Text>
       <View style={styles.searchedViewStyle}>
         {/* inout Text */}
         <View style={styles.inputViewStyle}>
@@ -153,6 +160,7 @@ const HomeScreen: React.FC<HomeProps> = ({navigation}) => {
         {/* Button to search */}
 
         <TouchableOpacity
+          testID="searchButton"
           onPress={() => {
             // do Search As desc
             gettingResult();
